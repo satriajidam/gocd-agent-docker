@@ -30,7 +30,7 @@ RUN \
   addgroup go root && \
   apk update --no-cache && \
   apk upgrade --no-cache && \
-  apk add --no-cache git mercurial subversion openssh-client bash curl && \
+  apk add --no-cache openjdk8-jre-base git mercurial subversion openssh-client bash curl && \
 # download the zip file
   curl --fail --location --silent --show-error "https://download.gocd.org/binaries/18.7.0-7121/generic/go-agent-18.7.0-7121.zip" > /tmp/go-agent.zip && \
 # unzip the zip file into /go-agent, after stripping the first path prefix
